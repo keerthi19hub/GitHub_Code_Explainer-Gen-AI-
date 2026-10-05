@@ -4,7 +4,7 @@ import requests
 import streamlit as st
 
 
-API_URL = "http://127.0.0.1:8000/explain"
+API_URL = "https://surfboard-cautious-mummy.ngrok-free.dev/explain"
 
 st.title("Local GitHub Repository Code Explainer")
 st.write(
