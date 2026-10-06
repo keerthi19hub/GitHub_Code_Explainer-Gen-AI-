@@ -25,6 +25,7 @@ if st.button("Explain This Repository"):
                 response = requests.post(
                     API_URL,
                     json={"github_url": github_url.strip()},
+                    headers={"ngrok-skip-browser-warning": "true"},
                     timeout=360,
                 )
                 response.raise_for_status()
